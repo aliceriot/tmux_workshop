@@ -80,8 +80,8 @@ And that's it! `C` is tmux-speak for `ctrl`.
 
 One of the coolest features of tmux is that we can 'detach' from a running
 tmux session, and it will continue to run in our absense. To detach we do
-`prefix-D`, which means hit prefix, release the keys, and then type
-`shift-D`. Cool! This is sort of like using `C-z` to suspend Vim, but we
+`prefix-d`, which means hit prefix, release the keys, and then type
+`d`. Cool! This is sort of like using `C-z` to suspend Vim, but we
 could be suspending a whole number of virtual terminals. Nifty!
 
 On a related note we can get a list of running tmux sessions by doing:
@@ -107,6 +107,13 @@ connection is interrupted you will be able to reattach right back where
 you were.
 
 This also applies to accidentally closing a terminal window on your
-machine!
+machine! Nice.
 
+#Command mode
+
+Tmux has a command mode that is kind of similar to Vim's. Basically if you
+do `prefix-:` you'll be at a little prompt where you can try out tmux
+commands. There are lots of tmux commands! We're going to start learning
+more of them and creating keybinds, command mode lets you try out
+a command to see what it does.
 
