@@ -19,7 +19,7 @@ can just do:
 
     brew install tmux
 
-should be it!
+that should be it!
 
 ###Linux
 
@@ -150,6 +150,15 @@ should. If you start a tmux session in `~/mydir`, and then move from there to
 Hooray! Credit for that one goes to Steve McCarthy. If we throw a `-h` option
 in there as well we'll get the same behavior we did before.)`
 
+#Destroy panes
+
+DESTROY! We can of course do this. If you bind a key to:
+
+    kill-pane
+
+that will close the currently focused pane (the one your cursor is in). If
+you kill the last active pane, tmux will die (sad).
+
 #Move between panes
 
 OK, so once we have splits that we're working with (maybe Vim on the left
@@ -173,3 +182,8 @@ Nice! If you're a vim user that will be nice and comfy.
 It's possible to change the size of the splits using keybinds, but I just
 use the mouse. You should be able to just click on the border and drag to
 resize.
+
+#Make new window
+
+Tmux has some terminology attached: everything we've done so far has taken
+place in one window. We've made 
