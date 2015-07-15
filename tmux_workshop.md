@@ -117,3 +117,35 @@ commands. There are lots of tmux commands! We're going to start learning
 more of them and creating keybinds, command mode lets you try out
 a command to see what it does.
 
+#Create new panes
+
+Tmux starts with only one pane occupying the whole of the window. We can do
+better! The command to do do a split so that we have two panes is:
+
+    split-window
+
+This will split it in half horizontally, so the result is two windows, one on
+the top and one on the bottom. By default this is bound to `"`, which I haven't
+found to be a terribly useful binding. If you want to rebind it you can do
+
+    bind u split-window
+
+(I use `u`, but you don't have to!). We can also split a pane in the other
+direction, so that we get a split into two panes next to each other. We get
+this behavior from the `-h` flag, like this:
+
+    split-window -h
+
+this is bound by default to `%`. I use `o` for it.
+
+###Path weirdness
+
+Tmux, by default, doesn't handle working directory in the way that I think it
+should. If you start a tmux session in `~/mydir`, and then move from there to
+`~/mydir/mybetterdir`, the working directory for new splits will still be
+`~/mydir`. We can solve this by using this instead:
+
+    split-window -c "#{pane_current_path}"
+
+Hooray! Credit for that one goes to Steve McCarthy. If we throw a `-h` option
+in there as well we'll get the same behavior we did before.)`
