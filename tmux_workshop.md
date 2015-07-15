@@ -168,4 +168,8 @@ are bound by default.
 
 Nice! If you're a vim user that will be nice and comfy.
 
+#Resize panes
 
+It's possible to change the size of the splits using keybinds, but I just
+use the mouse. You should be able to just click on the border and drag to
+resize.
