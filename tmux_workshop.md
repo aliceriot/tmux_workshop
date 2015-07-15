@@ -149,3 +149,23 @@ should. If you start a tmux session in `~/mydir`, and then move from there to
 
 Hooray! Credit for that one goes to Steve McCarthy. If we throw a `-h` option
 in there as well we'll get the same behavior we did before.)`
+
+#Move between panes
+
+OK, so once we have splits that we're working with (maybe Vim on the left
+and a REPL on the right) we need to move around. We enabled mouse support
+above, so really we could just click around, but we're badass hackers,
+right? right?
+
+OK well anyway, we can move relatively between panes using the
+`select-pane` command. I bind `hjkl` to this, for Vim-ness. The arrow keys
+are bound by default.
+
+    bind h select-pane -L
+    bind j select-pane -D
+    bind k select-pane -U
+    bind l select-pane -R
+
+Nice! If you're a vim user that will be nice and comfy.
+
+
