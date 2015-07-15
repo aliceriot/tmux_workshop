@@ -186,4 +186,22 @@ resize.
 #Make new window
 
 Tmux has some terminology attached: everything we've done so far has taken
-place in one window. We've made 
+place in one window. We've made splits, and killed splits, but so far
+we've only been working in one window. A window occupies the whole
+terminal in which tmux is living, and a particular tmux session can have
+one or more windows living in it. We can make a new window with:
+
+    new-window
+
+Cool! This is a new fullscreen window, which can hold more splits! But how
+do we switch around? We can do:
+
+    next-window
+
+and
+
+    previous-window
+
+to cycle through them. I bind these to `]` and `[` respectively. I guess
+we can think about windows as being sort of like tabs? Maybe? idk. Anyway,
+they are useful.
