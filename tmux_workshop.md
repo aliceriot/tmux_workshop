@@ -96,7 +96,7 @@ We can also reattach to a running session by doing:
 
     tmux attach -t 'session name'
 
-I have this aliases to `attach`. This will plop us back into the tmux
+I have this aliased to `attach`. This will plop us back into the tmux
 session we started earlier, and everything we had open will still be
 there.
 
@@ -147,8 +147,8 @@ should. If you start a tmux session in `~/mydir`, and then move from there to
 
     split-window -c "#{pane_current_path}"
 
-Hooray! Credit for that one goes to Steve McCarthy. If we throw a `-h` option
-in there as well we'll get the same behavior we did before.)`
+Hooray! Credit for that one goes to Steve McCarthy. If we throw a `-h`
+option in there as well we'll get the same behavior we did before.
 
 #Destroy panes
 
