@@ -205,3 +205,7 @@ and
 to cycle through them. I bind these to `]` and `[` respectively. I guess
 we can think about windows as being sort of like tabs? Maybe? idk. Anyway,
 they are useful.
+
+There is a command to kill a window (`kill-window`, imagine that) but
+I usually just close a window by killing all the panes that live inside of
+it - if you kill the last pane in a window it will kill the window.
